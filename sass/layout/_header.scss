@@ -2,10 +2,10 @@
     padding-top: 24px;
     padding-bottom: 25px;
     border-bottom: solid 1px #ECECEC ;
-}
-.header .container {
-    display: flex;
-    align-items: center;
+    .container {
+        display: flex;
+        align-items: center;
+    }
 }
 
 .logo {
@@ -27,10 +27,6 @@
     display: flex;
 }
 
-.nav-link:hover, .nav-link:focus {
-    color: var(--color-accent);
-}
-
 .nav-link {
     color: var(--text-color); 
     font-weight: 500;
@@ -38,20 +34,19 @@
     line-height: 1.14;
     letter-spacing: 0.02em;
     text-decoration: none;
-
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover, &:focus {
+        color: var(--color-accent);
+    }
 }
-
-
 
 .nav-item{
     position: relative;
-}
-
-.nav-item:not(:last-child) {
-    margin-right: 50px;
+    &:not(:last-child) {
+        margin-right: 50px;
+    }
 }
 
 .current::after{
@@ -66,8 +61,6 @@
     left: 0;
     bottom: -32px;
 }
-
-
 
 .contacts {
     display: flex;
@@ -90,7 +83,6 @@
     display: flex;
     align-items: center;
     fill: var(--second-text-color);
-
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);

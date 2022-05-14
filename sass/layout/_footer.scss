@@ -43,14 +43,12 @@
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.footer-contacts-link:hover, .footer-contacts-link:focus {
-    color: var(--color-accent);
+    &:hover, &:focus {
+        color: var(--color-accent);
+    }
 }
 
 .footer-contacts-item {
@@ -90,15 +88,13 @@
     justify-content: center;
     align-items: center;
     fill: var(--text-color-light);
-
     transition-property: background-color, fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.footer-soc-link:hover, .footer-soc-link:focus {
-    background-color: var(--color-accent);
-    fill: var(--text-color-light);
+    &:hover, &:focus {
+        background-color: var(--color-accent);
+        fill: var(--text-color-light);
+    }
 }
 
 .subscribe-box{
@@ -116,10 +112,9 @@
     padding: 15px 16px;
     color: #FFFFFF;
     outline: none;
-}
-
-.subscribe-input:focus{
-    border-color: var(--color-accent);
+    &:focus{
+        border-color: var(--color-accent);
+    }
 }
 
 .subscribe-btn{
@@ -138,12 +133,12 @@
     align-items: center;
     justify-content: center;
     align-content: space-around;
+    &::after{
+        content: '';
+        width: 24px;
+        height: 24px;
+        background-image: url(../images/icon_send.svg);
+        margin-left: 10px;
+    }
 }
 
-.subscribe-btn::after{
-    content: '';
-    width: 24px;
-    height: 24px;
-    background-image: url(../images/icon_send.svg);
-    margin-left: 10px;
-}
