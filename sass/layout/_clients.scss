@@ -3,7 +3,7 @@
     padding-bottom: 94px;
 }
 
-.clients-title{
+.clients__title{
     color: var(--text-color);
     font-size: 36px;
     line-height: 1.17;
@@ -17,7 +17,11 @@
     justify-content: center;
 }
 
-.clients-link{
+.clients-list__item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.clients-list__link{
     width: 170px;
     height: 92px;
     border: 1px solid #AFB1B8;
@@ -34,15 +38,12 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.clients-item:not(:last-child) {
-    margin-right: 30px;
-}
 
-.client-logo {
+.clients-list__logo {
     fill: #AFB1B8;
 }
 
-.clients-link:hover, .clients-link:focus{
+.clients-list__link:hover, .clients-list__link:focus{
     fill: var(--color-accent);
     border: 1px solid var(--color-accent);
 }

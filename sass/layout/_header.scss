@@ -23,16 +23,12 @@
     color: var(--color-accent);
 }
 
-.nav-link:hover, .nav-link:focus {
-    color: var(--color-accent);
+.nav-list {
+    display: flex;
 }
 
-.nav-link {
-    text-decoration: none;
-
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+.nav-link:hover, .nav-link:focus {
+    color: var(--color-accent);
 }
 
 .nav-link {
@@ -41,11 +37,14 @@
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
+    text-decoration: none;
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.nav-list {
-    display: flex;
-}
+
 
 .nav-item{
     position: relative;

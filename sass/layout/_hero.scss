@@ -14,7 +14,7 @@
 }
 
 
-.hero-title {
+.hero__title {
     color: var(--text-color-light);
     font-weight: 900;
     font-size: 44px;
@@ -28,7 +28,7 @@
     margin-right: auto;
 }
 
-.hero-button { 
+.hero__button { 
     color: var(--text-color-light);
     background-color: var(--color-button);
     font-family: inherit;
